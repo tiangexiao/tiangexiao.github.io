@@ -79,23 +79,23 @@
 
 
 
-<meta name="description" content="回溯法 回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但是在求解的过程中它能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 要控制整个回溯的流程，需要注意一些事情，比如这颗树是左右两侧大小相等还是左侧的值比右侧的值大。 控制退出的条件 结果当中是添加叶子节点，还是添加所有节点 leetcode22： 括号生成 给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成">
+<meta name="description" content="回溯法 回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但和完全的暴力法不同的是，它在求解的过程中能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 在建立这颗树的过程当中，控制好递归当中循环的细节、退出的条件、添加哪些节点的值是至关重要的。不同的方法得到的树不同，结果也不同。 下面是一些leetcode的题目，可以帮助更好的理解回溯法。 leetcode22： 括号生成">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="回溯法">
 <meta property="og:url" content="http://yoursite.com/2018/09/03/回溯法/index.html">
 <meta property="og:site_name" content="小舔哥">
-<meta property="og:description" content="回溯法 回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但是在求解的过程中它能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 要控制整个回溯的流程，需要注意一些事情，比如这颗树是左右两侧大小相等还是左侧的值比右侧的值大。 控制退出的条件 结果当中是添加叶子节点，还是添加所有节点 leetcode22： 括号生成 给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成">
+<meta property="og:description" content="回溯法 回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但和完全的暴力法不同的是，它在求解的过程中能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 在建立这颗树的过程当中，控制好递归当中循环的细节、退出的条件、添加哪些节点的值是至关重要的。不同的方法得到的树不同，结果也不同。 下面是一些leetcode的题目，可以帮助更好的理解回溯法。 leetcode22： 括号生成">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/09/03/回溯法/22.png">
-<meta property="og:image" content="http://yoursite.com/2018/09/03/回溯法/46.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/03/回溯法/39.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/03/回溯法/40.png">
+<meta property="og:image" content="http://yoursite.com/2018/09/03/回溯法/46.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/03/回溯法/78.png">
-<meta property="og:updated_time" content="2018-09-04T04:02:53.168Z">
+<meta property="og:updated_time" content="2018-09-04T10:53:03.644Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="回溯法">
-<meta name="twitter:description" content="回溯法 回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但是在求解的过程中它能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 要控制整个回溯的流程，需要注意一些事情，比如这颗树是左右两侧大小相等还是左侧的值比右侧的值大。 控制退出的条件 结果当中是添加叶子节点，还是添加所有节点 leetcode22： 括号生成 给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成">
+<meta name="twitter:description" content="回溯法 回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但和完全的暴力法不同的是，它在求解的过程中能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 在建立这颗树的过程当中，控制好递归当中循环的细节、退出的条件、添加哪些节点的值是至关重要的。不同的方法得到的树不同，结果也不同。 下面是一些leetcode的题目，可以帮助更好的理解回溯法。 leetcode22： 括号生成">
 <meta name="twitter:image" content="http://yoursite.com/2018/09/03/回溯法/22.png">
 
 
@@ -337,7 +337,9 @@
 
       
         <h2 id="回溯法">回溯法</h2>
-<p>回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但是在求解的过程中它能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。 要控制整个回溯的流程，需要注意一些事情，比如这颗树是左右两侧大小相等还是左侧的值比右侧的值大。 控制退出的条件 结果当中是添加叶子节点，还是添加所有节点</p>
+<p>回溯法是暴力搜索法的一种，从直观的角度来看，它是建立了一颗树。但和完全的暴力法不同的是，它在求解的过程中能够对于那些不符合要求的节点及时的剪枝，“回溯”回去。<br>
+在建立这颗树的过程当中，控制好递归当中循环的细节、退出的条件、添加哪些节点的值是至关重要的。不同的方法得到的树不同，结果也不同。</p>
+<p>下面是一些leetcode的题目，可以帮助更好的理解回溯法。</p>
 <h2 id="leetcode22-括号生成">leetcode22： <a href="https://leetcode.com/problems/generate-parentheses/description/" target="_blank" rel="noopener">括号生成</a></h2>
 <p>给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。</p>
 <p>例如，给出 n = 3，生成结果为：</p>
@@ -351,42 +353,7 @@
 ]</p>
 </blockquote>
 <p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">generateParenthesis</span><span class="params">(self, n)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type n: int</span></span><br><span class="line"><span class="string">        :rtype: List[str]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        self.generate_helper(results, <span class="string">''</span>, <span class="number">0</span>, <span class="number">0</span>, n)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">generate_helper</span><span class="params">(self, results, str, open, close, max)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(str) == <span class="number">2</span> * max:</span><br><span class="line">            results.append(str)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> open &lt; max:</span><br><span class="line">            self.generate_helper(results, str+<span class="string">'('</span>, open+<span class="number">1</span>, close, max)</span><br><span class="line">        <span class="keyword">if</span> close &lt; open:</span><br><span class="line">            self.generate_helper(results, str+<span class="string">')'</span>, open, close+<span class="number">1</span>, max)</span><br></pre></td></tr></table></figure></p>
-<p>分析：带有条件的树，左括号必须在右括号的前面，而且在任意一点处左括号数量大于等于右括号的数量。<br>
-图片描述： <img src="/2018/09/03/回溯法/22.png"></p>
-<hr>
-<h2 id="leetcode-46全排列">leetcode 46：<a href="https://leetcode.com/problems/permutations/description/" target="_blank" rel="noopener">全排列</a></h2>
-<p>给定一个没有重复数字的序列，返回其所有可能的全排列。</p>
-<p>示例:</p>
-<blockquote>
-<p>输入: [1,2,3]<br>
-输出:<br>
-[<br>
-[1,2,3],<br>
-[1,3,2],<br>
-[2,1,3],<br>
-[2,3,1],<br>
-[3,1,2],<br>
-[3,2,1]<br>
-]</p>
-</blockquote>
-<p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">permute</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        self.dfs(nums, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, nums, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(nums) == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            self.dfs(nums[:i]+nums[i+<span class="number">1</span>:], result+[nums[i]], results)</span><br><span class="line">            <span class="comment"># result不能用append，而是使用+，+产生了一个新的对象，而append是在原有的对象上面进行更新。如果要使用append，那么当这一步运行完以后，还需要pop，我的程序均使用第一种方法。</span></span><br></pre></td></tr></table></figure></p>
-<p>分析：是一颗均衡的树，保存的是树的叶子节点的值。<br>
-图片描述： <img src="/2018/09/03/回溯法/46.png"></p>
-<hr>
-<h2 id="leetcode47-全排列ii">leetcode47: <a href="https://leetcode.com/problems/permutations-ii/description/" target="_blank" rel="noopener">全排列(II)</a></h2>
-<p>给定一个可包含重复数字的序列，返回所有不重复的全排列。</p>
-<p>示例：</p>
-<blockquote>
-<p>输入: [1,1,2]<br>
-输出:<br>
-[<br>
-[1,1,2],<br>
-[1,2,1],<br>
-[2,1,1]<br>
-]</p>
-</blockquote>
-<p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">permuteUnique</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        nums.sort()</span><br><span class="line">        self.dfs(nums, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, nums, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(nums) == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> nums[i] == nums[i<span class="number">-1</span>]:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            self.dfs(nums[:i]+nums[i+<span class="number">1</span>:], result+[nums[i]], results)</span><br></pre></td></tr></table></figure></p>
-<p>分析：和上面的问题一样，主要是如何处理相同的问题，出现相同的情况，只处理第一次，后面的不进行处理。比如<span class="math inline">\(1_1 \ 1_2 \ 2\)</span>这种情况，第一次是<span class="math inline">\(1_1\)</span>和<span class="math inline">\(1_2 \ 2\)</span>，这种情况可以继续处理。第二次假如遇到<span class="math inline">\(1_2\)</span>和<span class="math inline">\(1_1 \ 2\)</span>这种情况不处理，直接continue过去，因为它和第一种情况是相同的，后续的处理结果也是一样的。</p>
+<p>图片描述： <img src="/2018/09/03/回溯法/22.png"> 分析：递归的时候左括号总是在右括号前面，而且右括号的数量不得多于左括号，递归结束的条件是括号长度等于预定的长度。</p>
 <hr>
 <h2 id="leetcode39-组合总和">leetcode39 <a href="https://leetcode.com/problems/combination-sum/description/" target="_blank" rel="noopener">组合总和</a></h2>
 <p>给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。candidates 中的数字可以无限制重复被选取。</p>
@@ -397,8 +364,8 @@
 <p>输入: candidates = [2,3,6,7], target = 7,<br>
 所求解集为:<br>
 [<br>
-[7],<br>
-[2,2,3]<br>
+  [7],<br>
+  [2,2,3]<br>
 ]</p>
 </blockquote>
 <p>示例2:</p>
@@ -406,17 +373,17 @@
 <p>输入: candidates = [2,3,5], target = 8,<br>
 所求解集为:<br>
 [<br>
-[2,2,2,2],<br>
-[2,3,3],<br>
-[3,5]<br>
+  [2,2,2,2],<br>
+  [2,3,3],<br>
+  [3,5]<br>
 ]</p>
 </blockquote>
-<p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">combinationSum</span><span class="params">(self, candidates, target)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type candidates: List[int]</span></span><br><span class="line"><span class="string">        :type target: int</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        candidates.sort()</span><br><span class="line">        self.dfs(candidates, target, <span class="number">0</span>, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, candidates, target, index, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> target &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">if</span> target == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(index, len(candidates)):</span><br><span class="line">            self.dfs(candidates, target-candidates[i], i,result+[candidates[i]], results)</span><br></pre></td></tr></table></figure></p>
-<p>图片描述： <img src="/2018/09/03/回溯法/39.png"></p>
+<p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">combinationSum</span><span class="params">(self, candidates, target)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type candidates: List[int]</span></span><br><span class="line"><span class="string">        :type target: int</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        candidates.sort()</span><br><span class="line">        self.dfs(candidates, target, <span class="number">0</span>, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, candidates, target, index, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> target &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">if</span> target == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(index, len(candidates)):</span><br><span class="line">            self.dfs(candidates, target-candidates[i], i,result+[candidates[i]], results)</span><br><span class="line">            <span class="comment"># 在这里使用result+[candidates[i]]，而不是使用append。</span></span><br><span class="line">            <span class="comment"># +产生了一个新的对象，而append是在原有的对象上面进行更新。</span></span><br><span class="line">            <span class="comment"># 如果要使用append，那么当这一步运行完以后，还需要把添加的值pop出来（相当于回溯），</span></span><br><span class="line">            <span class="comment"># 另外程序16行要修改为results.append(result.copy())。</span></span><br><span class="line">            <span class="comment"># 我的程序均使用第一种方法。</span></span><br></pre></td></tr></table></figure></p>
+<p>图片描述： <img src="/2018/09/03/回溯法/39.png"> 分析：树的左侧节点值明显要比右侧节点值多，这是由递归过程中的for循环来决定的，确切的是由index的值决定的。</p>
 <hr>
 <h2 id="leetcode40-组合总和ii">leetcode40 <a href="https://leetcode.com/problems/combination-sum-ii/description/" target="_blank" rel="noopener">组合总和II</a></h2>
-<p>给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。candidates 中的每个数字在每个组合中只能使用一次。<br>
-说明：<br>
+<p>给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。candidates 中的每个数字在每个组合中只能使用一次。</p>
+<p>说明：<br>
 所有数字（包括目标数）都是正整数。<br>
 解集不能包含重复的组合。</p>
 <p>示例 1:</p>
@@ -424,10 +391,10 @@
 <p>输入: candidates = [10,1,2,7,6,1,5], target = 8,<br>
 所求解集为:<br>
 [<br>
-[1,7],<br>
-[1, 2, 5],<br>
-[2, 6],<br>
-[1, 1, 6]<br>
+  [1,7],<br>
+  [1, 2, 5],<br>
+  [2, 6],<br>
+  [1, 1, 6]<br>
 ]</p>
 </blockquote>
 <p>示例 2:</p>
@@ -435,33 +402,65 @@
 <p>输入: candidates = [2,5,2,1,2], target = 5,<br>
 所求解集为:<br>
 [<br>
-[1,2,2],<br>
-[5]<br>
+  [1,2,2],<br>
+  [5]<br>
 ]</p>
 </blockquote>
 <p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">combinationSum2</span><span class="params">(self, candidates, target)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type candidates: List[int]</span></span><br><span class="line"><span class="string">        :type target: int</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        candidates.sort()</span><br><span class="line">        results = []</span><br><span class="line">        self.dfs(candidates, target, <span class="number">0</span>, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, candidates, target, index, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> target &lt;<span class="number">0</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">if</span> target == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(index, len(candidates)):</span><br><span class="line">            <span class="keyword">if</span> i &gt; index <span class="keyword">and</span> candidates[i] == candidates[i<span class="number">-1</span>]:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            self.dfs(candidates, target-candidates[i], i+<span class="number">1</span>, result+[candidates[i]], results)</span><br></pre></td></tr></table></figure></p>
 <p>图片描述： <img src="/2018/09/03/回溯法/40.png"></p>
-<p>分析：可以看出这棵树的左侧的节点要比右侧的节点多，这在于我们循环的时候是用i+1开始的。保存的是符合条件的叶子节点的值。</p>
+<p>分析：可以看出和上一题相比，在递归循环的里面有两个不同，第一个不同是：使用continue来处理重复值的情况，当第二次出现的值和第一次出现的值相同的时候，在第一次已经处理过了，所有以后会直接跳过。另外一点不同的是递归调用的index的值由i变成了i+1，这可以在两张图里面看出来，比如第一张图2下面的节点是2,3,6,7，而第二张图的节点是3,6,7，是因为index多增加一位的缘故。</p>
+<hr>
+<h2 id="leetcode-46全排列">leetcode 46：<a href="https://leetcode.com/problems/permutations/description/" target="_blank" rel="noopener">全排列</a></h2>
+<p>给定一个没有重复数字的序列，返回其所有可能的全排列。</p>
+<p>示例:</p>
+<blockquote>
+<p>输入: [1,2,3]<br>
+输出:<br>
+[<br>
+  [1,2,3],<br>
+  [1,3,2],<br>
+  [2,1,3],<br>
+  [2,3,1],<br>
+  [3,1,2],<br>
+  [3,2,1]<br>
+]</p>
+</blockquote>
+<p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">permute</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        self.dfs(nums, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, nums, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(nums) == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            self.dfs(nums[:i]+nums[i+<span class="number">1</span>:], result+[nums[i]], results)</span><br></pre></td></tr></table></figure></p>
+<p>图片描述： <img src="/2018/09/03/回溯法/46.png"> 分析：树的左侧节点和右侧节点的值一样多，保存的是树的叶子节点的值。</p>
+<hr>
+<h2 id="leetcode47-全排列ii">leetcode47: <a href="https://leetcode.com/problems/permutations-ii/description/" target="_blank" rel="noopener">全排列(II)</a></h2>
+<p>给定一个可包含重复数字的序列，返回所有不重复的全排列。</p>
+<p>示例：</p>
+<blockquote>
+<p>输入: [1,1,2]<br>
+输出:<br>
+[<br>
+  [1,1,2],<br>
+  [1,2,1],<br>
+  [2,1,1]<br>
+]</p>
+</blockquote>
+<p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">permuteUnique</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        nums.sort()</span><br><span class="line">        self.dfs(nums, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, nums, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> len(nums) == <span class="number">0</span>:</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">if</span> i &gt; <span class="number">0</span> <span class="keyword">and</span> nums[i] == nums[i<span class="number">-1</span>]:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            self.dfs(nums[:i]+nums[i+<span class="number">1</span>:], result+[nums[i]], results)</span><br></pre></td></tr></table></figure></p>
 <hr>
 <h2 id="leetcode78-子集">leetcode78 <a href="https://leetcode.com/problems/subsets/description/" target="_blank" rel="noopener">子集</a></h2>
-<p>给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。<br>
-说明：解集不能包含重复的子集。</p>
+<p>给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。</p>
+<p>说明：解集不能包含重复的子集。</p>
 <p>示例:</p>
 <blockquote>
 <p>输入: nums = [1,2,3]<br>
 输出: [<br>
-[3],<br>
-[1],<br>
-[2],<br>
-[1,2,3],<br>
-[1,3],<br>
-[2,3],<br>
-[1,2],<br>
-[]<br>
+  [3],<br>
+  [1],<br>
+  [2],<br>
+  [1,2,3],<br>
+  [1,3],<br>
+  [2,3],<br>
+  [1,2],<br>
+  []<br>
 ]</p>
 </blockquote>
 <p>代码： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">subsets</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        results = []</span><br><span class="line">        self.dfs(nums, <span class="number">0</span>, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, nums, index, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> index == len(nums):</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        results.append(result)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(index, len(nums)):</span><br><span class="line">            self.dfs(nums, i+<span class="number">1</span>, result+[nums[i]], results)</span><br></pre></td></tr></table></figure></p>
-<p>图片描述： <img src="/2018/09/03/回溯法/78.png"></p>
+<p>图片描述： <img src="/2018/09/03/回溯法/78.png"> 分析：在这道题当中，results当中保存所有节点的值，而不仅仅是叶子节点的值。</p>
 <hr>
 <h2 id="leetcode90-子集ii">leetcode90 <a href="https://leetcode.com/problems/subsets-ii/description/" target="_blank" rel="noopener">子集II</a></h2>
 <p>给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。</p>
@@ -471,15 +470,16 @@
 <p>输入: [1,2,2]<br>
 输出:<br>
 [<br>
-[2],<br>
-[1],<br>
-[1,2,2],<br>
-[2,2],<br>
-[1,2],<br>
-[]<br>
+  [2],<br>
+  [1],<br>
+  [1,2,2],<br>
+  [2,2],<br>
+  [1,2],<br>
+  []<br>
 ]</p>
 </blockquote>
 <p>代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">subsetsWithDup</span><span class="params">(self, nums)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :rtype: List[List[int]]</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        nums.sort()</span><br><span class="line">        results = []</span><br><span class="line">        self.dfs(nums, <span class="number">0</span>, [], results)</span><br><span class="line">        <span class="keyword">return</span> results</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(self, nums, index, result, results)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> index == len(nums):</span><br><span class="line">            results.append(result)</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        results.append(result)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(index, len(nums)):</span><br><span class="line">            <span class="keyword">if</span> i &gt; index <span class="keyword">and</span> nums[i] == nums[i<span class="number">-1</span>]:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            self.dfs(nums, i+<span class="number">1</span>, result+[nums[i]], results)</span><br></pre></td></tr></table></figure></p>
+<p>分析：和上一道题不同之处在于使用continue机制来处理重复的值。</p>
 
       
     </div>
@@ -650,7 +650,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#回溯法"><span class="nav-number">1.</span> <span class="nav-text">回溯法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode22-括号生成"><span class="nav-number">2.</span> <span class="nav-text">leetcode22： 括号生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode-46全排列"><span class="nav-number">3.</span> <span class="nav-text">leetcode 46：全排列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode47-全排列ii"><span class="nav-number">4.</span> <span class="nav-text">leetcode47: 全排列(II)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode39-组合总和"><span class="nav-number">5.</span> <span class="nav-text">leetcode39 组合总和</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode40-组合总和ii"><span class="nav-number">6.</span> <span class="nav-text">leetcode40 组合总和II</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode78-子集"><span class="nav-number">7.</span> <span class="nav-text">leetcode78 子集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode90-子集ii"><span class="nav-number">8.</span> <span class="nav-text">leetcode90 子集II</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#回溯法"><span class="nav-number">1.</span> <span class="nav-text">回溯法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode22-括号生成"><span class="nav-number">2.</span> <span class="nav-text">leetcode22： 括号生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode39-组合总和"><span class="nav-number">3.</span> <span class="nav-text">leetcode39 组合总和</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode40-组合总和ii"><span class="nav-number">4.</span> <span class="nav-text">leetcode40 组合总和II</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode-46全排列"><span class="nav-number">5.</span> <span class="nav-text">leetcode 46：全排列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode47-全排列ii"><span class="nav-number">6.</span> <span class="nav-text">leetcode47: 全排列(II)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode78-子集"><span class="nav-number">7.</span> <span class="nav-text">leetcode78 子集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#leetcode90-子集ii"><span class="nav-number">8.</span> <span class="nav-text">leetcode90 子集II</span></a></li></ol></div>
             
 
           </div>
@@ -704,7 +704,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">8.9k</span> 字
+      博客全站共： <span class="post-count">9.0k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
@@ -865,26 +865,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
