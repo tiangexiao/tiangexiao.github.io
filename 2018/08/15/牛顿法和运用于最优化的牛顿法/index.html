@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="小舔哥">
 <meta property="og:description" content="牛顿法，大致的思想是用泰勒公式的前几项来代替原来的函数，然后对函数进行求解和优化。牛顿法和应用于最优化的牛顿法稍微有些差别。 牛顿法 牛顿法用来迭代的求解一个方程的解，原理如下： 对于一个函数f(x),它的泰勒级数展开式是这样的 \[ f(x) = f(x_0) + f&amp;#39;(x_0)(x-x_0) + \frac{1}{2} f&amp;#39;&amp;#39;(x_0)(x-x_0)^2 + ..">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-23T10:21:44.134Z">
+<meta property="og:updated_time" content="2018-09-11T03:57:01.588Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="牛顿法和运用于最优化的牛顿法">
 <meta name="twitter:description" content="牛顿法，大致的思想是用泰勒公式的前几项来代替原来的函数，然后对函数进行求解和优化。牛顿法和应用于最优化的牛顿法稍微有些差别。 牛顿法 牛顿法用来迭代的求解一个方程的解，原理如下： 对于一个函数f(x),它的泰勒级数展开式是这样的 \[ f(x) = f(x_0) + f&amp;#39;(x_0)(x-x_0) + \frac{1}{2} f&amp;#39;&amp;#39;(x_0)(x-x_0)^2 + ..">
@@ -366,7 +366,9 @@
 <p><span class="math display">\[\phi(x) = f(x_0) + f&#39;(x_0)(x-x_0) + \frac{1}{2} f&#39;&#39;(x_0)(x-x_0)^2\]</span></p>
 <p>最优点的选择是<span class="math inline">\(\phi&#39;(x)=0\)</span>的点，对上式求导</p>
 <p><span class="math display">\[\phi&#39;(x) =f&#39;(x_0) + f&#39;&#39;(x_0)(x-x_0)\]</span></p>
-<p>令<span class="math inline">\(\phi&#39;(x) = 0\)</span>，则<span class="math inline">\(x = x_0 - \frac{f&#39;(x_0)}{f&#39;&#39;(x_0)}\)</span> 所以，最优化的牛顿迭代公式是 <span class="math display">\[x_{n+1} = x_n - \frac{f&#39;(x_n)}{f&#39;&#39;(x_n)}\]</span> ### 高维下的牛顿优化方法 在高维下</p>
+<p>令<span class="math inline">\(\phi&#39;(x) = 0\)</span>，则<span class="math inline">\(x = x_0 - \frac{f&#39;(x_0)}{f&#39;&#39;(x_0)}\)</span> 所以，最优化的牛顿迭代公式是 <span class="math display">\[x_{n+1} = x_n - \frac{f&#39;(x_n)}{f&#39;&#39;(x_n)}\]</span></p>
+<h3 id="高维下的牛顿优化方法">高维下的牛顿优化方法</h3>
+<p>在高维下</p>
 <p><span class="math display">\[\phi(x) = f(x_0) + \nabla f(x_0)^T (x-x_0) + \frac{1}{2} (x-x_0)^T \nabla^2 f(x_0)(x-x_0)\]</span></p>
 <p>求<span class="math inline">\(\nabla \phi(x)\)</span>,并令它等于0，则公式变为了</p>
 <p><span class="math display">\[\nabla f(x_0) + \nabla^2 f(x_0)(x-x_0) =0\]</span></p>
@@ -497,7 +499,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -568,7 +570,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#牛顿法"><span class="nav-number">1.</span> <span class="nav-text">牛顿法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#牛顿法求解n的平方根"><span class="nav-number">1.1.</span> <span class="nav-text">牛顿法求解n的平方根</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用于最优化的牛顿法"><span class="nav-number">2.</span> <span class="nav-text">应用于最优化的牛顿法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#牛顿法"><span class="nav-number">1.</span> <span class="nav-text">牛顿法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#牛顿法求解n的平方根"><span class="nav-number">1.1.</span> <span class="nav-text">牛顿法求解n的平方根</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用于最优化的牛顿法"><span class="nav-number">2.</span> <span class="nav-text">应用于最优化的牛顿法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#高维下的牛顿优化方法"><span class="nav-number">2.1.</span> <span class="nav-text">高维下的牛顿优化方法</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -622,7 +624,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">9.0k</span> 字
+      博客全站共： <span class="post-count">10.5k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
