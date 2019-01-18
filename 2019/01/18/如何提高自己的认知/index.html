@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="二叉树," />
+  <meta name="keywords" content="认知," />
 
 
 
@@ -79,21 +79,18 @@
 
 
 
-<meta name="description" content="根据前序遍历和中序遍历构建二叉树 问题：已知一个二叉树前序遍历为：ABDEGCFH，中序遍历为：DBGEACHF，则该二叉树的后序遍历为？ &amp;gt; 思路是这样的：1：根据前序遍历来确定每次根节点的位置，因为前序遍历先访问的是根节点，所以前序遍历第一个位置就是根节点。 2：根据根节点和中序遍历将树划分为左右两棵树。3：根据第一步和第二步递归的处理左右两棵树。 第一步：根据前序遍历 A B D">
-<meta name="keywords" content="二叉树">
+<meta name="description" content="人和人之间的差别，本质上是认知方式的差别，从小的方面来讲，是一个人比另一个人更加聪明，从更大的方面来讲是一个人比另一个人充满智慧，更一般的，是一个人在某个方面比另一个人认识深刻，他的认知方式更能够反应这个世界的规律，从而很好的适应这个世界。 一个人要想在竞争中获胜，在这个世界生存，需要提升他的认知方式。这本身是一个艰难的过程，是一个不断改变自己的过程，他可以按照下面三点来做：  确定认知的主">
+<meta name="keywords" content="认知">
 <meta property="og:type" content="article">
-<meta property="og:title" content="根据前序遍历和中序遍历构建二叉树">
-<meta property="og:url" content="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/index.html">
+<meta property="og:title" content="如何提高自己的认知">
+<meta property="og:url" content="https://tiangexiao.github.io/2019/01/18/如何提高自己的认知/index.html">
 <meta property="og:site_name" content="小舔哥">
-<meta property="og:description" content="根据前序遍历和中序遍历构建二叉树 问题：已知一个二叉树前序遍历为：ABDEGCFH，中序遍历为：DBGEACHF，则该二叉树的后序遍历为？ &amp;gt; 思路是这样的：1：根据前序遍历来确定每次根节点的位置，因为前序遍历先访问的是根节点，所以前序遍历第一个位置就是根节点。 2：根据根节点和中序遍历将树划分为左右两棵树。3：根据第一步和第二步递归的处理左右两棵树。 第一步：根据前序遍历 A B D">
+<meta property="og:description" content="人和人之间的差别，本质上是认知方式的差别，从小的方面来讲，是一个人比另一个人更加聪明，从更大的方面来讲是一个人比另一个人充满智慧，更一般的，是一个人在某个方面比另一个人认识深刻，他的认知方式更能够反应这个世界的规律，从而很好的适应这个世界。 一个人要想在竞争中获胜，在这个世界生存，需要提升他的认知方式。这本身是一个艰难的过程，是一个不断改变自己的过程，他可以按照下面三点来做：  确定认知的主">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/build_tree.png">
-<meta property="og:image" content="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/different_tree.png">
-<meta property="og:updated_time" content="2018-12-30T01:33:53.753Z">
+<meta property="og:updated_time" content="2019-01-18T11:54:23.366Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="根据前序遍历和中序遍历构建二叉树">
-<meta name="twitter:description" content="根据前序遍历和中序遍历构建二叉树 问题：已知一个二叉树前序遍历为：ABDEGCFH，中序遍历为：DBGEACHF，则该二叉树的后序遍历为？ &amp;gt; 思路是这样的：1：根据前序遍历来确定每次根节点的位置，因为前序遍历先访问的是根节点，所以前序遍历第一个位置就是根节点。 2：根据根节点和中序遍历将树划分为左右两棵树。3：根据第一步和第二步递归的处理左右两棵树。 第一步：根据前序遍历 A B D">
-<meta name="twitter:image" content="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/build_tree.png">
+<meta name="twitter:title" content="如何提高自己的认知">
+<meta name="twitter:description" content="人和人之间的差别，本质上是认知方式的差别，从小的方面来讲，是一个人比另一个人更加聪明，从更大的方面来讲是一个人比另一个人充满智慧，更一般的，是一个人在某个方面比另一个人认识深刻，他的认知方式更能够反应这个世界的规律，从而很好的适应这个世界。 一个人要想在竞争中获胜，在这个世界生存，需要提升他的认知方式。这本身是一个艰难的过程，是一个不断改变自己的过程，他可以按照下面三点来做：  确定认知的主">
 
 
 
@@ -123,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/"/>
+  <link rel="canonical" href="https://tiangexiao.github.io/2019/01/18/如何提高自己的认知/"/>
 
 
 
 
 
-  <title>根据前序遍历和中序遍历构建二叉树 | 小舔哥</title>
+  <title>如何提高自己的认知 | 小舔哥</title>
   
 
 
@@ -266,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/">
+    <link itemprop="mainEntityOfPage" href="https://tiangexiao.github.io/2019/01/18/如何提高自己的认知/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小舔哥">
@@ -283,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">根据前序遍历和中序遍历构建二叉树</h1>
+          <h1 class="post-title" itemprop="name headline">如何提高自己的认知</h1>
         
 
         <div class="post-meta">
@@ -295,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-21T17:04:34+08:00">
-                2018-08-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-18T17:27:05+08:00">
+                2019-01-18
               </time>
             
 
@@ -318,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
                   </a>
                 </span>
 
@@ -329,8 +326,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/算法/" itemprop="url" rel="index">
-                    <span itemprop="name">算法</span>
+                  <a href="/categories/随笔/认知提升/" itemprop="url" rel="index">
+                    <span itemprop="name">认知提升</span>
                   </a>
                 </span>
 
@@ -365,7 +362,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  808
+                  1,557
                 </span>
               
 
@@ -381,7 +378,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  5
                 </span>
               
             </div>
@@ -402,18 +399,21 @@
       
 
       
-        <h2 id="根据前序遍历和中序遍历构建二叉树">根据前序遍历和中序遍历构建二叉树</h2>
-<p>问题：已知一个二叉树前序遍历为：ABDEGCFH，中序遍历为：DBGEACHF，则该二叉树的后序遍历为？ &gt; 思路是这样的：1：根据前序遍历来确定每次根节点的位置，因为前序遍历先访问的是根节点，所以前序遍历第一个位置就是根节点。 2：根据根节点和中序遍历将树划分为左右两棵树。3：根据第一步和第二步递归的处理左右两棵树。</p>
-<p><strong>第一步</strong>：根据前序遍历 <strong>A B D E G C F H</strong> 确定头结点是A，根据中序遍历 <strong>D B G E A C H F</strong> 将树划分为左子树 <strong>D B G E</strong> 和右子树 <strong>C H F</strong>。</p>
-<p><strong>第二步</strong>：划分为左右两棵子树：对于左子树，前序遍历是 <strong>B D E G</strong>，后续遍历是 <strong>D B G E</strong>。对于右子树，前序遍历是 <strong>C F H</strong>，后续遍历是 <strong>C H F</strong>。</p>
-<p><strong>第三步</strong>：对左子树和右子树分别运用第一步和第二步进行分析。</p>
-<p><strong>递归结束的条件</strong>：当中序遍历的节点只剩下一个节点的时候，那么这个节点就是叶子节点。</p>
-<p>整体的操作流程如下： <img src="/2018/08/21/根据前序遍历和中序遍历构建二叉树/build_tree.png"></p>
-<p>Python代码如下： <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TreeNode</span>:</span></span><br><span class="line">    <span class="string">"""树节点"""</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, x)</span>:</span></span><br><span class="line">        self.val = x</span><br><span class="line">        self.left = <span class="keyword">None</span></span><br><span class="line">        self.right = <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reConstructBinaryTree</span><span class="params">(self, pre, tin)</span>:</span></span><br><span class="line">        <span class="string">"""根据前序遍历和中序遍历来重建一颗二叉树，要求前序遍历和中序遍历当中字符不重复</span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">          pre: 前序遍历  list类型或者者str类型</span></span><br><span class="line"><span class="string">          tin: 中序遍历  </span></span><br><span class="line"><span class="string">        Returns：</span></span><br><span class="line"><span class="string">          head: 一个TreeNode类型的根节点</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        <span class="keyword">return</span> self.rebuild_tree(pre, <span class="number">0</span>, len(pre)<span class="number">-1</span>, tin, <span class="number">0</span>, len(tin)<span class="number">-1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">rebuild_tree</span><span class="params">(self, pre, pre_start, pre_end, tin, tin_start, tin_end)</span>:</span></span><br><span class="line">         <span class="string">"""递归的进行树的重建"""</span></span><br><span class="line">        <span class="keyword">if</span> pre_start &gt; pre_end <span class="keyword">or</span> tin_start &gt; tin_end:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">None</span></span><br><span class="line"></span><br><span class="line">        head = TreeNode(pre[pre_start])</span><br><span class="line">        tin_mid = tin.index(pre[pre_start])</span><br><span class="line">        left_length = tin_mid - tin_start</span><br><span class="line"></span><br><span class="line">        head.left = self.rebuild_tree(pre, pre_start+<span class="number">1</span>, pre_start+left_length, </span><br><span class="line">                                      tin, tin_start, tin_mid<span class="number">-1</span>)</span><br><span class="line">        head.right = self.rebuild_tree(pre,pre_start+left_length+<span class="number">1</span>, pre_end, </span><br><span class="line">                                       tin, tin_mid+<span class="number">1</span>, tin_end)</span><br><span class="line">                                       </span><br><span class="line">        <span class="keyword">return</span> head</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">post_order_print</span><span class="params">(head)</span>:</span></span><br><span class="line">    <span class="string">"""以后序遍历的方式打印一颗二叉树"""</span></span><br><span class="line">    <span class="keyword">if</span> head <span class="keyword">is</span> <span class="keyword">None</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    post_order_print(head.left)</span><br><span class="line">    post_order_print(head.right)</span><br><span class="line">    print(head.val,end=<span class="string">''</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    pre = <span class="string">'ABDEGCFH'</span></span><br><span class="line">    tin = <span class="string">'DBGEACHF'</span></span><br><span class="line">    s = Solution()</span><br><span class="line">    head = s.reConstructBinaryTree(pre, tin)</span><br><span class="line">    post_order_print(head)  <span class="comment"># result: DGEBHFCA</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="根据树后序遍历和中序遍历构建二叉树">根据树后序遍历和中序遍历构建二叉树</h2>
-<p>道理是一样的，根据后序遍历来确定根节点的位置，由于后序遍历最后访问根节点， 所以此时最后一个节点就是根节点。根据中序遍历来划分左右子树，然后迭代求解。</p>
-<h2 id="根据树前序遍历和中序遍历不能构建唯一的二叉树">根据树前序遍历和中序遍历不能构建唯一的二叉树</h2>
-<p>前序和后序在本质上都是将父节点与子结点进行分离，但并没有指明左子树和右子树的能力，因此得到这两个序列只能明确父子关系，而不能确定一个二叉树。 比如前序遍历为ABC，后续遍历为CBA，可以构造出下面两棵树，可以发现这并不唯一： <img src="/2018/08/21/根据前序遍历和中序遍历构建二叉树/different_tree.png"></p>
+        <p>人和人之间的差别，本质上是认知方式的差别，从小的方面来讲，是一个人比另一个人更加聪明，从更大的方面来讲是一个人比另一个人充满智慧，更一般的，是一个人在某个方面比另一个人认识深刻，他的认知方式更能够反应这个世界的规律，从而很好的适应这个世界。</p>
+<p>一个人要想在竞争中获胜，在这个世界生存，需要提升他的认知方式。这本身是一个艰难的过程，是一个不断改变自己的过程，他可以按照下面三点来做：</p>
+<hr>
+<h2 id="确定认知的主题">确定认知的主题</h2>
+<p>假如想要提升自己的认知，我们可能有这样的想法：我想要提升我整个的认知方式，让我在各个方面都超越别人，这不太现实，现实的做法是以点开始，然后慢慢的连成线，最后才波及到面。所以，刚开始的时候，一定要从某个特定的点开始，确定自己的认知主题。假如你感觉到你的生活非常混乱，各种任务缠身让你透不过气，那么你需要把认知的主题确定为“时间管理”。假如你想要知道如何进行有效的学习，那么你可以把认知主题确定为“如何学习”，如果你想要健康，那么你需要把主题确定为“健康”。</p>
+<h2 id="建立框架进行思考">建立框架，进行思考</h2>
+<p>接下来，你需要对你选定的主题进行思考，确定这个主题的框架。什么是一个主题的框架：一个框架是这个主题包含哪些流程，或者是包含哪些内容。对于时间管理，大致流程是：收集-安排-确定下一步的动作。对于健康，它包含：锻炼、饮食、睡眠、休息、心态、对常见疾病的认识、及时治疗等诸多内容。</p>
+<p>为什么确定框架如此重要？首先，通过对框架的搭建你已经了解了这个主题的大致内容，知道了它的一般步骤和内容分布，更重要的是，通过确定框架，你以后的知识和思考有了依附和填充。可能，你以前听过睡眠对于健康的重要性，但是当你听过以后，由于你没有健康的框架，不知道睡眠在整个健康框架中的内容，你获得的各种知识和日常生活中的各个思考是零碎的，认识不深刻，不能更好的发挥它的作用。</p>
+<p>如何确定框架？你可以尝试使用主题阅读的方法，主题阅读原本是《如何阅读一本书》当中提出来的一种为了解决某个问题而采用的读书方法，但是我发现，它对于确定框架还是蛮好用的。首先是找到很多的书（其它的材料也可以），先采用快速阅读的方法发现这本书讲的是什么，对于你的主题是不是有帮助，对于那些没有任何帮助的内容，则丢弃掉。然后找到那些最能够给你提供干货的书籍，仔细阅读它们，比较它们和不同书籍的相同点和不同点，看看它讲了哪些内容，这块内容是不是应该是这个框架的内容。有的时候，一个认知主题大家研究的比较多、比较成熟，一本书就能确定它的认知框架，有的时候则需要交叉各个书的内容进行总结。</p>
+<p>当搭建完成框架以后，你还需要不断的进行理性上的思考，通过查找资料、搜索、阅读书籍等来对你不理解的地方、搞不懂的地方、存在疑惑的地方进行思考和学习。</p>
+<h2 id="回归生活进行反思">回归生活，进行反思</h2>
+<p>生活的事情还是要回归生活，仅仅依靠你建立的框架有点太理想主义的色彩，而且框架建立以后，在日常生活中你会发现它可能不正确、可能有残缺。在日常生活中不单单是一种认知主题的事情，即使是简单的一个事情，也有可能涉及到诸多的主题，我们需要从日常生活中这种真实、丰富的经历中不断反思来填充我们的认知框架，修正我们的认知。要知道生活中的情况是一个个活生生的案例，是一个个真实的选择。例如，对于自律来说，你可以在脑海当中进行彻底的理性思考，知道自律当中应该放下，应该选择那些从长远来看对我们有益的事情，应该养成习惯，但是在实际当中你面临的是要不要玩游戏，要不要看剧等等具体的抉择，需要我们的感性来做决定，只有不断的在生活中修炼我们的感性能力才能真正的提高我们的认知。</p>
+<p>富兰克林将成功的要素总结成13个习惯：节制、寡言、秩序、果断、节俭、勤奋、诚恳、公正、适度、清洁、镇静、贞洁、谦逊。为了培养这些习惯，他每一周专注一个习惯，检查自己是否做到了这一些。这个方法对于我们来说也有借鉴，我么你可以将我们认知的主题列为一个清单，通过每天的反省，我这一天做的事情属于哪个主题，我的认知方式是否正确，这样不断修正自己的认知框架和认知方式。</p>
+<hr>
+<p>认知提升是个长久的事情。要搭建好自己的认知框架并且进行理性思考，让所有的认识和反思有依附的位置，在日常生活中不断的反思纠正认知中的错误，修炼我们感性的能力，最后才能真正的提升自己的认知方式。</p>
 
       
     </div>
@@ -458,7 +458,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/" title="根据前序遍历和中序遍历构建二叉树">https://tiangexiao.github.io/2018/08/21/根据前序遍历和中序遍历构建二叉树/</a>
+    <a href="https://tiangexiao.github.io/2019/01/18/如何提高自己的认知/" title="如何提高自己的认知">https://tiangexiao.github.io/2019/01/18/如何提高自己的认知/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -473,7 +473,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/二叉树/" rel="tag"># 二叉树</a>
+            <a href="/tags/认知/" rel="tag"># 认知</a>
           
         </div>
       
@@ -486,8 +486,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/15/牛顿法和运用于最优化的牛顿法/" rel="next" title="牛顿法和运用于最优化的牛顿法">
-                <i class="fa fa-chevron-left"></i> 牛顿法和运用于最优化的牛顿法
+              <a href="/2019/01/13/如何学习/" rel="next" title="如何学习">
+                <i class="fa fa-chevron-left"></i> 如何学习
               </a>
             
           </div>
@@ -495,10 +495,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/21/贝叶斯决策论/" rel="prev" title="贝叶斯决策论">
-                贝叶斯决策论 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -653,7 +649,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#根据前序遍历和中序遍历构建二叉树"><span class="nav-number">1.</span> <span class="nav-text">根据前序遍历和中序遍历构建二叉树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据树后序遍历和中序遍历构建二叉树"><span class="nav-number">2.</span> <span class="nav-text">根据树后序遍历和中序遍历构建二叉树</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据树前序遍历和中序遍历不能构建唯一的二叉树"><span class="nav-number">3.</span> <span class="nav-text">根据树前序遍历和中序遍历不能构建唯一的二叉树</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#确定认知的主题"><span class="nav-number">1.</span> <span class="nav-text">确定认知的主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立框架进行思考"><span class="nav-number">2.</span> <span class="nav-text">建立框架，进行思考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回归生活进行反思"><span class="nav-number">3.</span> <span class="nav-text">回归生活，进行反思</span></a></li></ol></div>
             
 
           </div>
