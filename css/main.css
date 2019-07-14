@@ -1949,7 +1949,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f13eff;
+  background: #7370fe;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3062,4 +3062,19 @@ hr {
 }
 .icon-cnblogs:before {
   content: "\e602";
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1562335575808"); /* IE9 */
+  src: url("iconfont.eot?t=1562335575808#iefix") format('embedded-opentype'), url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOUAAsAAAAAB5QAAANFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqDIIJqATYCJAMICwYABCAFhG0HLxuPBhEVnA3IfiTYjq0KUFLvLKJJJTgmeBNEpDNnTyfxfwiZJDvhjmuq4gYIILi7NV0B90ZFqC7Z861n+R9Ju/OXD+s8TqMUQiIkPs/ltLEE5wfKZcxFe+NRL8A4oADHWhTIARfQgXEq4DkiHcjjNATwyK4oqVu/aVscNJgkgAwdNKAXTs6BbqkVHASrZqVGVmLiqEXqKbAi/L38onQOKEwDNLTsX68vNb9uogJjZmKmrj4N5Xw+QFoHBlAUaJC2tYHmGHG6KAPPSGtyY1+1Al83JRK+Yrd/PBAQC1QHAGRlFfekdFW3SqUCQAM2MBc4Mmo/sPMFmbMErjtm/foMG/YUPhyWPRvdEqsfC2uGYTo/itrF42VkQ4YtOzJvf943Fmuf1XWoSIZhl3W+uINsf11+cd61a9ety7DB33co08y0ia5zIbVx074MB0a2zMy4dlO6df6SflKWrH3vhlm3RfUexHNsj7VdfHjWkSWHZh7ssHbt+vUbNqxbd2f+ysudp47pMLa12SPpUubmNB3SQu2c1aVkm6B3TnGa3xywXCZypvl/GVqsZNYB/85Azn4yv6PUpoL5nfrRF9+qarPSEhm+dM2lT3YelcZpNzNNhtHNekSj9/ojE7bfuEC3CirX9zN7BjQ+3T9jPenWTepl6l9l75mSpvuz0vLc0n369Ek9WjaoniO7q2sZ8pJTFPU4n2Zh/kX8ioU1W9S/e77Y9PB8cWqCqLFePfmLqOHK9hUzeqSo+tvxNQDv6k3uwNs0/ULgvEhQ4A9R9mzTphpOpXVlbV4xF/tFdR7FIAGR1D6PDaVD6hMcWclCYZMNBg556ZpdFCY+ZWHhKNWAp4huvS8NcSBzgcLeDERKHyjJbsCQ0peu2T+Y0vvDkrIDPO1Ls6Mvf6OpI2gVA7gXjJ43ctxqotoj9rfFSlYd8q8oaYxBlZfFXIcbyhxz0r2vVQlIeIWWOQ+XhSEKT+g1H1RjUxRU96Hc85oZdQhkKRQA5wWMPLYhv7sype8fod7NwpIWQkPyColk7B9UcmUPemfYehHu5Z3krldTigAi2Aq0jA8tlGYg1g+bIE/lhhHJqFFwnaivIV/ftH66PYAHVhUNMDCPo+MsAwAAAA==") format('woff2'), url("iconfont.woff?t=1562335575808") format('woff'), url("iconfont.ttf?t=1562335575808") format('truetype'), url("iconfont.svg?t=1562335575808#iconfont") format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-weibo:before {
+  content: "\e699";
 }
